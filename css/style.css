@@ -109,17 +109,24 @@ span{
     border-radius: 0px 0px 0px 5px;
 }
 
+input,textarea{
+    color: var(--secondColor) !important;
+}
+
+input:focus,textarea:focus{
+    caret-color: var(--furthColor) !important;
+    color: var(--secondColor) !important;
+    font-weight: 700 !important;
+}
+
+textarea{
+    resize: none;
+}
+
 .btn{
     text-transform: uppercase;
 }
 
-.btnAdd{
-    background-color: var(--secondColor);
-    border: transparent;
-}
-.btnAdd:hover{
-    background-color: var(--furthColor);
-}
 
 /* ================= DISPLAY ================= */
 .DISPLAY{

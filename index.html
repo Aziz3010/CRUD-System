@@ -14,45 +14,47 @@
             <div class="container">
                 <h2>crud <span>system</span></h2>
             </div>
+
             <div class="container">
                 <!-- Alert Message -->
-                <p class="FillMESSAGE d-none">Please Fill All Fields</p>
-                <div class="row">        
+                <p id="FillMESSAGE" class="FillMESSAGE d-none">Please all fields are required</p>
+                <!-- row -->
+                <div class="row">
                     <!-- CRUD INPUTS -->
                     <div class="CRUD col-md-6 pY-4">
                         <!-- ProductName -->
                         <div class="form-group">
-                            <input class="form-control" id="productName" type="text" placeholder="Product Name">
-                            <p class="alert alert-danger text-center m-0 mt-1 p-0 d-none">Please Enter The Product Name</p>
+                            <input class="form-control crudInput" id="productName" type="text" placeholder="Product Name">
+                            <p class="alert text-center m-0 mt-1 p-0 d-none"></p>
                         </div>
                         <!-- Product Price -->
                         <div class="form-group">
-                            <input class="form-control" id="productPrice" type="number" placeholder="Product Price">
-                            <p class="alert alert-danger text-center m-0 mt-1 p-0 d-none">Please Enter The Product Price</p>
+                            <input class="form-control crudInput" id="productPrice" type="number" placeholder="Product Price">
+                            <p class="alert text-center m-0 mt-1 p-0 d-none"></p>
                         </div>
                         <!-- Unit -->
                         <div class="form-group">
-                            <input class="form-control" id="unit" type="number" placeholder="Unit">
-                            <p class="alert alert-danger text-center m-0 mt-1 p-0 d-none">Please Enter The Unit</p>
+                            <input class="form-control crudInput" id="unit" type="number" placeholder="Unit">
+                            <p class="alert text-center m-0 mt-1 p-0 d-none"></p>
                         </div>
                         <!-- Description -->
                         <div class="form-group">
-                            <textarea class="form-control" id="description" placeholder="Description"></textarea>
-                            <p class="alert alert-danger text-center m-0 mt-1 p-0 d-none">Please Enter The Description</p>
+                            <textarea class="form-control crudInput" id="description" rows="2" placeholder="Description"></textarea>
+                            <p class="alert text-center m-0 mt-1 p-0 d-none"></p>
                         </div>
                         <!-- BUTTONS -->
                         <div class="form-group">
-                            <button class="btn btnAdd btn-primary">Add Product</button>
-                            <button class="btn btn-light">Clear</button>
+                            <button id="addBtn" class="btn btnAdd btn-primary mb-2">Add Product</button>
+                            <button id="clearBtn" class="btn btn-light mb-2">Clear</button>
                         </div>
                     </div>
                     <!-- DISPLAY DATA -->
                     <div class="DISPLAY col-md-6 pY-4">
                       <!-- search -->
-                        <input class="form-control w-50 ml-auto " id="search" type="text" placeholder="Search...">
+                        <input class="form-control w-75 ml-auto " id="search" type="text" placeholder="Search by product name..">
                       <!-- table -->
                         <div class="forScroll">
-                            <table class="table bg-light m-0  table-hover">
+                            <table class="table bg-light m-0 table-hover">
                                 <thead id="thead">
                                     <th>Index</th>
                                     <th>Product</th>
@@ -70,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            </section>
+        </section>
 
 
         <script src="js/jquery-3.6.0.js"></script>
