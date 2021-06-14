@@ -1,0 +1,140 @@
+:root{
+    --bodyColor:#d5d5d5;
+    --secondColor:#04aa6d;
+    --fontFirstColor: #fff;
+    --fontSecondColor: #dbdbdb;
+    --thirdColor:#cccccc;
+    --furthColor:#008a57;
+    --fifthColor: #e6e6e6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bodyColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* remove arrow from input [number] */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+section{
+    width: 100%;
+    padding: 2rem 0rem;
+}
+
+h2{
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-left: .8rem;
+    color: var(--fontFirstColor);
+    background-color: var(--thirdColor);
+    border-left: 4px solid var(--secondColor);
+    border-radius: 5px 5px 0px 0px;
+    text-transform: uppercase;
+}
+
+span{
+    color: var(--secondColor);
+}
+
+.container{
+    border-radius: 5px;
+    padding: 0;
+}
+.row{
+    margin: 0;
+    border-radius: 5px;
+}
+.FillMESSAGE{
+    padding: .3rem 0rem;
+    border-radius: 5px 5px 0px 0px;
+    border: none;
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    color: red;
+    background-color: var(--thirdColor);
+}
+
+.form-group{
+    width: 80%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 1.8rem;
+}
+
+.form-group::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    left: 10%;
+    bottom: -15px;
+    background-color: rgba(0, 0, 0,.2);
+}
+
+.CRUD .form-group:last-child{
+    margin-bottom: 0;
+}
+
+.CRUD .form-group:last-child::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    left: 10%;
+    bottom: -10px;
+    background-color: transparent;
+}
+/* ================= CRUD ================= */
+.CRUD{
+    background-color: var(--fifthColor);
+    border-radius: 0px 0px 0px 5px;
+}
+
+.btn{
+    text-transform: uppercase;
+}
+
+.btnAdd{
+    background-color: var(--secondColor);
+    border: transparent;
+}
+.btnAdd:hover{
+    background-color: var(--furthColor);
+}
+
+/* ================= DISPLAY ================= */
+.DISPLAY{
+    background-color: var(--fontSecondColor);
+    border-radius: 0px 0px 5px 0px ;
+}
+
+.forScroll{
+    margin-top: 20px;
+    max-height: 320px;
+    width: 100%;
+    overflow: scroll;
+
+}
+
+#thead{
+    background-color: var(--fifthColor);
+}

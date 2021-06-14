@@ -3,21 +3,79 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>CRUD SYSTEM</title>
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <section>
+            <div class="container">
+                <h2>crud <span>system</span></h2>
+            </div>
+            <div class="container">
+                <!-- Alert Message -->
+                <p class="FillMESSAGE d-none">Please Fill All Fields</p>
+                <div class="row">        
+                    <!-- CRUD INPUTS -->
+                    <div class="CRUD col-md-6 pY-4">
+                        <!-- ProductName -->
+                        <div class="form-group">
+                            <input class="form-control" id="productName" type="text" placeholder="Product Name">
+                            <p class="alert alert-danger text-center m-0 mt-1 p-0 d-none">Please Enter The Product Name</p>
+                        </div>
+                        <!-- Product Price -->
+                        <div class="form-group">
+                            <input class="form-control" id="productPrice" type="number" placeholder="Product Price">
+                            <p class="alert alert-danger text-center m-0 mt-1 p-0 d-none">Please Enter The Product Price</p>
+                        </div>
+                        <!-- Unit -->
+                        <div class="form-group">
+                            <input class="form-control" id="unit" type="number" placeholder="Unit">
+                            <p class="alert alert-danger text-center m-0 mt-1 p-0 d-none">Please Enter The Unit</p>
+                        </div>
+                        <!-- Description -->
+                        <div class="form-group">
+                            <textarea class="form-control" id="description" placeholder="Description"></textarea>
+                            <p class="alert alert-danger text-center m-0 mt-1 p-0 d-none">Please Enter The Description</p>
+                        </div>
+                        <!-- BUTTONS -->
+                        <div class="form-group">
+                            <button class="btn btnAdd btn-primary">Add Product</button>
+                            <button class="btn btn-light">Clear</button>
+                        </div>
+                    </div>
+                    <!-- DISPLAY DATA -->
+                    <div class="DISPLAY col-md-6 pY-4">
+                      <!-- search -->
+                        <input class="form-control w-50 ml-auto " id="search" type="text" placeholder="Search...">
+                      <!-- table -->
+                        <div class="forScroll">
+                            <table class="table bg-light m-0  table-hover">
+                                <thead id="thead">
+                                    <th>Index</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Unit</th>
+                                    <th>Description</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </thead>
+                                <tbody id="tbody" class="text-center">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
 
 
-
-
-        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/all.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
